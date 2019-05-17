@@ -36,6 +36,7 @@ public class Commander extends Unit {
   @Override
   public void accept(UnitVisitor visitor) {
     visitor.visitCommander(this);
+
     super.accept(visitor);
   }
 

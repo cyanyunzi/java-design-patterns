@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <interface id="1" language="java" name="com.iluwatar.acyclicvisitor.ModemVisitor" project="acyclic-visitor" 
+  <interface id="1" language="java" name="com.iluwatar.acyclicvisitor.EncryptVisitor" project="acyclic-visitor"
     file="/acyclic-visitor/src/main/java/com/iluwatar/acyclicvisitor/ModemVisitor.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="860" y="67"/>    
@@ -20,7 +20,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="com.iluwatar.acyclicvisitor.ConfigureForUnixVisitor" project="acyclic-visitor" 
+  <class id="3" language="java" name="com.iluwatar.acyclicvisitor.MD5EncryptVisitor" project="acyclic-visitor"
     file="/acyclic-visitor/src/main/java/com/iluwatar/acyclicvisitor/ConfigureForUnixVisitor.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="124" width="196" x="647" y="225"/>    
@@ -30,7 +30,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="com.iluwatar.acyclicvisitor.Zoom" project="acyclic-visitor" 
+  <class id="4" language="java" name="com.iluwatar.acyclicvisitor.MobileClient" project="acyclic-visitor"
     file="/acyclic-visitor/src/main/java/com/iluwatar/acyclicvisitor/Zoom.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="203" y="305"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -49,7 +49,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <interface id="6" language="java" name="com.iluwatar.acyclicvisitor.ZoomVisitor" project="acyclic-visitor" 
+  <interface id="6" language="java" name="com.iluwatar.acyclicvisitor.MD5EncryptVisitor" project="acyclic-visitor"
     file="/acyclic-visitor/src/main/java/com/iluwatar/acyclicvisitor/ZoomVisitor.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="758" y="467"/>    
@@ -59,7 +59,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="7" language="java" name="com.iluwatar.acyclicvisitor.Hayes" project="acyclic-visitor" 
+  <class id="7" language="java" name="com.iluwatar.acyclicvisitor.WebClient" project="acyclic-visitor"
     file="/acyclic-visitor/src/main/java/com/iluwatar/acyclicvisitor/Hayes.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="479" y="307"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -68,7 +68,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="8" language="java" name="com.iluwatar.acyclicvisitor.ConfigureForDosVisitor" project="acyclic-visitor" 
+  <class id="8" language="java" name="com.iluwatar.acyclicvisitor.HexEncryptVisitor" project="acyclic-visitor"
     file="/acyclic-visitor/src/main/java/com/iluwatar/acyclicvisitor/ConfigureForDosVisitor.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="142" width="192" x="883" y="225"/>    

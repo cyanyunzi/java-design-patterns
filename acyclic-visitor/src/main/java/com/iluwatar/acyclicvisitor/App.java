@@ -23,33 +23,26 @@
 package com.iluwatar.acyclicvisitor;
 
 /**
- * The Acyclic Visitor pattern allows new functions to be added to existing class 
- * hierarchies without affecting those hierarchies, and without creating the dependency 
- * cycles that are inherent to the GoF Visitor pattern, by making the Visitor base class 
- * degenerate
- * <p>
- * In this example the visitor base class is {@link ModemVisitor}. The base class of the 
- * visited hierarchy is {@link Modem} and has two children {@link Hayes} and {@link Zoom} 
- * each one having its own visitor interface {@link HayesVisitor} and {@link ZoomVisitor} 
- * respectively. {@link ConfigureForUnixVisitor} and {@link ConfigureForDosVisitor} 
- * implement each derivative's visit method only if it is required 
+ *再议访问者模式
+ * 1：Visitor 接口扩展  方法
+ * 2：具体Visitor接口实现扩展不同的行为
+ * 3：适用于对象内部方法新增或变动频繁，针对扩展Visitor接口实现 来动态扩展对象方法
+ *
  */
 public class App {
-  
-  /**
-   * Program's entry point
-   */
-  
-  public static void main(String[] args) {  
-    ConfigureForUnixVisitor conUnix = new ConfigureForUnixVisitor();
-    ConfigureForDosVisitor conDos = new ConfigureForDosVisitor();
-    
-    Zoom zoom = new Zoom();
-    Hayes hayes = new Hayes();
-    
-    hayes.accept(conDos); // Hayes modem with Unix configurator
-    zoom.accept(conDos); // Zoom modem with Dos configurator
-    hayes.accept(conUnix); // Hayes modem with Unix configurator
-    zoom.accept(conUnix); // Zoom modem with Unix configurator   
+
+  public static void main(String[] args) {
+    EncryptVisitor md5EncryptVisitor = new MD5EncryptVisitor();
+    EncryptVisitor hexEncryptVisitor = new HexEncryptVisitor();
+
+    MobileClient mobileClient = new MobileClient();
+    mobileClient.accept(md5EncryptVisitor);
+    mobileClient.accept(hexEncryptVisitor);
+
+    System.out.println("----分割线----");
+
+    WebClient webClient = new WebClient();
+    webClient.accept(md5EncryptVisitor);
+    webClient.accept(hexEncryptVisitor);
   }
 }

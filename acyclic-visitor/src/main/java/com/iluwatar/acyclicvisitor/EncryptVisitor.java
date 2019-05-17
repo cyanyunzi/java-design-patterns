@@ -22,9 +22,7 @@
  */
 package com.iluwatar.acyclicvisitor;
 
-/**
- * HayesVisitor interface
- */
-public interface HayesVisitor extends ModemVisitor {
-  void visit(Hayes hayes);
+/*加密访问器*/
+public interface EncryptVisitor<T extends Modem> {
+    void visit(T t);
 }
